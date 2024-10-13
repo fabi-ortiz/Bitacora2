@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2 </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imagenes/logocopy.png" alt="" width="250">
+
+        </header>
+        <nav>
+            <a href="#ps">Position</a>
+            <a href="#dp">Display </a>
+            <a href="#an">Animacion</a>
+            <a href="#npc">Nuevas propiedades CSS3</a>
+            <a href="#ra"> Referencias avanzadas </a>
+            <a href="#cu">Carrera universitaria </a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1 id="ps">Position</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <h3> Propiedad Position </h3>
+
+                    <p>Especifica el tipo de método de posicionamiento utilizado para un elemento , hay 5 valores de
+                        posición diferentes: <br>
+                        <b>Static, relative, fixed, absolut y sticky.</b> <br>
+                        Los elementos se posicionan usando las propiedades de top, bottom, left y right.
+                    </p>
+
+                    Un elemento con position:static; no esta posicionado de ninguna manera especial, siempre se
+                    posiciona de acuerdo con el flujo normal de la pagina. <br><br>
+
+                    El posicionamiento relativo desplaza un elemento respecto de su posición original establecida
+                    mediante el posicionamiento normal.
+                    <br>
+                    Cuando un elemento se posiciona de forma absoluta, el resto de elementos de la página se ven
+                    afectados y modifican su posición. Los demás elementos ocuparan el espacio que deja el elemento
+                    desplazado y es probable que se produzcan soplamientos con otros elementos. <br>
+                    <br>
+                    <b>Position:fixed;</b>
+                    Un elemento de position:fixed; esta ubicado en relación con la ventana grafica, lo que significa
+                    que siempre permanece en el mismo lugar, incluso si la pagina se desplaza. <br>
+                    Las propiedades: top, bottom, left y right, se utilizan para posicionar el elemento <br>
+                    <b>Position:sticky;</b> <br>
+                    Un elemento con position:sticky;se posiciona en función de la posición de desplazamiento del
+                    usuario. <br>
+                    Un elelem nto sticky alterna entre relativo y fijo, dependiendo de la posición de
+                    desplazamiento. Se posiciona de forma relativa hasta que se encuentra una posición de
+                    desplazamiento deda en ela ventana grafica, luego se “pega” en su lugar (como position:fixed;)
+
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <p> <b>Position:static;</b> <br>
+                        Los elementos HTML se posicionan estáticos de forma predeterminada . Los elementos posicionados
+                        estáticos no se ven afectados por las propiedades top, bottom left, right y z-index. <br>
+
+                        <b>Position:relative; </b> <br>
+                        Un elemento con position:relative; esta posicionado en relación a su posición normal. <br>
+                        El desplazamiento de la caja se controla con las propiedades top, bottom, left,right y
+                        z-index.Los demás elementos no ocuparan el espacio que deja el elemento desplazado. <br>
+                        <b>Position:absolute;</b> <br>
+                        El posicionamiento absoluto se emplea para establecer de forma exacta la posición en la que se
+                        muestra la caja de un elemento. <br>
+                        La nueva posición del elemento se indica mediante las propiedades top, bottom, left, rigth y
+                        z-indexque en este caso dependen del posicionamiento del elemento contenedor cuando tiene una
+                        posición diferente a static. <br>
+
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/position.png" alt="" width="550">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p>Estas propiedades las podemos usar para agregar un boton, una imagen, un video, etc
+                    y que se puedan quedar en una posicion fija, que se puedan desplazar de una forma normal o que se
+                    se pueda quedar en la forma exacta de la que muestra la caja. </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="dp">Display</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>Propiedad display <br><br>
+                        Establece el tipo de caja que genera cada elemento, traen un valor de display que ya está
+                        predeterminado. <br><br><br>
+                        Displey:none; <br>
+                        Se usa comúnmente conJavaScript para ocultar y mostrar elemento cuando el usuario
+                        realiza alguna acción como pulsar un botón o un enlace sin eliminarlos mi crearlos.</p>
+                    <p><b>Display:inline-block; </b> permite establecer un ancho y una altura en el elementó. Se
+                        respetan los
+                        margin y padding que con display: inline no son respetados, NO agrega salto de líneas después
+                        del elemento.Puede alinearse junto a otros elementos. <br>
+                        <b>Displey:none;</b>
+                        Hace que el elemento no genere ninguna caja, el resultado es que el elemento desaparece por
+                        completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Se
+                        utiliza sobre un elemento todos sus descendientes también desaparecen por completo de la pagina.
+                    </p>
+
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <p><b>Display:block;</b> siempre comienza en una nueva línea y ocupa todo el ancho disponible.
+                        Elementos con display block
+                        DIV
+                        H1
+                        P
+                        FROM
+                        HEADER </p>
+                    <p><b>Display:inline;</b> no comienza en una nueva línea y solo ocupa el ancho que sea necesario. no
+                        es
+                        necesario poner el width y heigth por que usa solo necesario, ya que esta predeterminando
+                        Elementos en línea
+                        SPAN
+                        A
+                        IMG </p>
+                    <p><b>Display:table;</b> permite asignar una comportamiento de tabla a los elementos que haya
+                        dentro, se
+                        pueden usar otra seria de valores de display que corresponden con los roles de distintas
+                        estiquetas HTML que usas en las tablas tradicionales <br>
+                        Display :table-row; Actúa como el elemento fila -tr- <br>
+                        Display:table-cell; etiquetas que trabajan como una celda -td-</p>
+
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/display.jpg" alt="" width="500">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p>Con la propiedad display, podemos crear tablas, podemos crear cajas con medidas predeterminadas 
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="an">Animacion</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p> Css permite animar la mayoría de los elementos html sin usar JavaScript <br>
+                        • Cuando especifica estilos css dentro de la regla @keyframes, la animación cambiara del
+                        estitilo actual al estilo nuevo <br>
+                        Sintaxis <br>
+                        @keyframes nombre {
+                        From{background-color:red;
+                        Width:100px;
+                        }
+                        To {background-color:yellow;
+                        Width:500px;
+                        }
+                        } <br>
+                        Sintaxis 2 <br>
+                        @keyframes nombre{
+                        0%{backgroun-color:red;
+                        Width:100px;
+                        }
+                        50%{background-color:yellow;
+                        Width:500px;
+                        }
+                        100%{backgroun-color:yellow;
+                        Width:500px;
+                        }
+                        } <br>
+                        Para que una animación funcione, se debe vincular la animación a un elemento.
+                        <br>Div{
+                        Animation-name:animo1;
+                        } <br>
+
+                        @keyframes animo1{
+                        From{background-color:red;}
+                        To {background-color:yellow;}
+                        }
+
+                    </p>
+                    <p>
+                        • Animation : propiedad rápida para configurar todas las propiedades de la animación. Por
+                        ejemplo, los siguientes fragmentos expresan lo mismo:
+                        Div{
+                        Animation:ejemplo 5s linear 2s infinitive alterne;
+                        }
+                        Div{
+                        Animation-name:ejemplo;
+                        Animation-duration:5s;
+                        Animation-timining-function;linear;
+                        Animation-delay:2s;
+                        Animation-interation.count:infinite;
+                        Animation-direction:alternate;
+                        }
+
+                    </p>
+                    <ol>• Animationduration <br>
+                        Especifica cuanto tiempo debe transcurrir una animación para completar el ciclo.
+                        Si no se especifica la propiedad de duración de la animación, no se producirá ninguna animación,
+                        ya que el valor predeterminado es 0 segundos.
+                        También, se puede especificar usando, cambiara usando”to (0%inicio)” y “from(100%, completo)”.
+                    </ol>
+                    <ol>• Animation-interation-count:
+                        Especifica el numero de veces que se debe reproducir una animación. Se expresa con números
+                        cerrados y se puede usar también infinito.
+                    </ol>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+
+                    <ol>• Animation-delay
+                        Especifica un retraso para el inicio de una animación. Se expresa en seundos. Se puede utilizar
+                        unidades negativas
+                    </ol>
+                    <ol>• Animation-play-state:
+                        Especifica si la animación se esta ejecutando(running) o esta en pausa (paused)
+                    </ol>
+                    <ol>• Animation- timing-function:
+                        Especifica la curva de la velocidad de la animación
+                        - Linear, Ease, Ease-in, Ease-out,Ease-in-out, Cubic-bezier
+                    </ol>
+                    <ol>• Animation-direction:
+                        Especifica si una animación debe reproducirse hacia adelante, hacia atrás, o en ciclos alternos.
+                        - Normal, Reverse, Alternate, Alternate-reverse
+                    </ol>
+                    <ol>• Animation-fill-mode:
+                        Especifica un estilo para el elemento cuando la animación no se esta reproduciendo (antes de que
+                        comience, después de que termine o ambos)
+                        - None, Forwards,Backwards, Both
+                    </ol>
+                    <ol></ol>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/animacion.png" alt="" width="550">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Podemos crear animaciones, ya sean normales, que vayan de reversa, que tenga duracion, que se queden
+                    pausadas y hacerlas
+                    que vayan a una direccion en especifico y de algun color.
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="npc">Nuevas proiedades CSS3</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>Propiedades de CSS3
+                        Es una tecnología prácticamente inédita comparada , para algunas propiedades se deben usar los
+                        prefijos -moz-,-o- y -webki- <br><br>
+                        Border-radius <br>
+                        • El primer perímetro determina la curvatura horizontal y el segundo la vertical
+                        • Para declarar ambos parámetros de la curva, los valores deben ser separados por una
+                        barra……border-radius:15px/20px <br>
+                        Box-shadow <br>
+                        • puede tomar cinco parámetros : el colore, el desplazamiento horizontal, el desplazamiento
+                        vertical, el valor de difuminación y la palabra clave inset para generar una sombra
+                        interna….box-shadow: #000000 5px 5px 10px inset; <br>
+                        Linear-gradient <br>
+                        • Los atributos indican el punto inicial y los colores usados para crear el gradiente
+                        • El primer valor puede ser especificado en pixeles, en porcentaje o usando las palabras clave
+                        top, bottom, left y rigth. <br>
+                        Radial-gradient <br>
+                        • Existen dos valores para la forma: cicle y elipse, y puntos de terminación pueden ser
+                        declarados para cada color indicando la posición donde la transición comienza. </p>
+                    <p> Outline
+                        Esta propieda fue mejorada con la incorporación de otra propiedad llamada outline-offset. Ambas
+                        propiedades combinadas generar un segundo borde alejado del borde original del elemento <br>
+                        Transform
+                        Esta propiedad modifica el elemento <br>
+                        Border-image
+                        Esta propiedad crea un borde con una imagen personalizada.
+
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <ol> Border-radius:
+                        Genera esquena redondeadas para la caja formada por el elemento, LOS PIXELES AGREGADOS SERAN POR
+                        ESQUINA per se puede poner las medidas por esquinas.</ol>
+                    <ol> Box-shadow:
+                        Esta propiedad crea sombreas para la caja formada por el elemento.</ol>
+                    <ol>Text- shadow:
+                        Sirve para agregar sombra a las letra</ol>
+                    <ol>@font-face:
+                        Nos permite cagar y usar cualquier fuente que necesitemos y que este descargada</ol>
+                    <ol>Linear-gradient:
+                        Puede ser aplicada a las propiedades background o background-image para generar un gradiente
+                        lineal</ol>
+                    <ol> Radial-gradient:
+                        Puede ser aplicada a las propiedades background o backgroun-image para generar un gradiente
+                        radial</ol>
+                    <ol>RGBA:
+                        Esta función es una mejora de rgb() con un color alfa que especifica la opacidad de un color.
+                    </ol>
+                    <ol>HSLA:
+                        HSL significa tono, saturación y luminosidad, la A significa la opacidad</ol>
+
+
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/boxshadow.jpg" alt="" width="500">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Con estas propiedades podemos transformar, ya sea la escala,
+                    rotarla, inclinarla o moverla, tambien podemos redondear los bordes
+                    de un elemento, agregar color, tonos, saturacion y luminosidad.
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="ra">Referencias avanzadas </h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES Y NOTAS</h2>
+                <div class=" textoi">
+
+                    <p>• Selector de atributo
+                        Selecciona elementos HTML en función de la presencia o el valor de uno de sus atributos. Esto
+                        permite aplicar estilos a los elementos que tienen un atributo especifico, o cuyo atributo tiene
+                        un valor determinado <br>
+                        • Selector de atributo-[atributo^=”inicio”]
+                        Una regla con el selector (^=) selecciona elementos cuyo atributo comienza con un valor
+                        especifico <br>
+
+                        • Selector de atributo- [atributo$=”final”]
+                        Una regla con el selector($=)selecciona elementos cuyo atributo termina con un valor especifico
+                        <br>
+                        • Selector de atributo-[atributo*=”cadena”]
+                        Una regla con el selector (*=) selecciona elementos cuyo atributo contiene una cadena especifica
+                        en cualquier posición
+                    </p>
+
+                    <p>• Selectores de relación
+                        Los selectores de relación en css permiten seleccionar elementos basados en su relación con
+                        otros elementos basados en su relación con otros elementos dentro del documento. Estos
+                        selectores son útiles para aplicar estilos a elementos que tienen un vinculo estructural con
+                        otros elementos, como ancestros, padres, hermanos o descendientes.
+                        <br>
+                        - Selector de hijos directos (>)
+                        Selecciona los elementos que son hijos inmediatos de un elemento padre.
+                        <br>
+                        - Selector de hermanos adyacentes(+)
+                        Selecciona un elemento que es hermano inmediato, es decir, estájusto después de otro elemento
+                        <br>
+                        - Selector de hermanos generales (~)
+                        - Selecciona todos los elementos que son hermano de un elemento anterior, es decir, esta antes,
+                        sin importar si son hermanos inmediatos o no
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <p> • Atributo id :
+                        Es como el un nombre único que identifica al elemento . el valor de este atributo no puede ser
+                        duplicado. Este nombre debe ser único en todo el documento.
+                        <br>
+                        • Atributo class
+                        Este es mas flexible y puede ser asignadas a varios elementos html en el documento que comparten
+                        un diseño similar
+                        <br>
+                        • Elementos
+                        Un selector de elementos en css es una regla que selecciona todos los elementos de un tipo
+                        especifico en el documento html <br>
+                        • Pseudoclases-;nth-child()
+                        Nos permite encontrar a un hijo especifico, para poder poner algún color o tamaño de letra se
+                        puede poner solo agregándole el numero en css <br>
+                        • Pseudoclases-;nth-child()
+                        Nos permite encontrar a un hijo especifico, para poder poner algún color o tamaño de letra se
+                        puede poner solo agregándole el numero en css
+                        <br>
+                        • Pseudoclases-:nth-child(odd):nth-child(even)
+                        Las palabras clave odd(impar) y even(par) se utilizan para seleccionar elementos con base a
+                        posición en la secuencia de hijos, específicamente para alternar entre elementos impares y
+                        pares.
+                        <br>
+                        • Pseudoclases-:frist-child
+                        Existen otras importantes pseundoclases relacionadas con esta ultima.
+                        La pseudoclasefrist-child referencia solo el primer hijo.
+                        <br>
+                        • Pseudoclases-:last-child
+                        Hace referencia a solo el ultimo hijo, esta pseudoclase en particular no requieren palabras
+                        clave o parámetros
+                        <br>
+                        • Pseudoclases-:only-child
+                        Afecta un elemento siempre y cuando sea el único hijo disponible.
+                        Estas pseudoclases en particular no requieren palabras clave o parámetros
+                        <br>
+                        • Pseudoclases-:not(#)
+                        Nos permite declarar una excepción. Los estilos en la regla cread con esta pseudoclase serán
+                        asignados a todo elemento excepto aquellos incluidos en la referencia entre paréntesis
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/pseudoclases.jpg" alt="" width="450">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Con estas propiedades podemos ponerle un estilo unico a los parrafos o
+                    a los renglones, acomodar los numeros por nuemero pares o impares, o dejar un elemento sin estilo
+                </p>
+            </div>
+        </footer>
+    </main>
+    <main>
+        <section>
+            <div class="titulo">
+                <h1 id="cu">Carrera universitaria</h1>
+            </div>
+            <div class="izquierda">
+                <h2>IDEAS PRINCIPALES</h2>
+                <div class=" textoi">
+                    <p>
+                        El dia 4 de octubre algunos de mis compañeros fueron a la carrera universitaria, y los que no
+                        iban a asistir tendríamos que ir a la clase, estos el profesor para ponernos una actividad nos
+                        puso un cuestionario de 5 preguntas
+                    </p>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Notas de clase </h2>
+                <div class="textod">
+                    <p>
+                        Esas 5 preguntas eran temas ya vistos en clase, sobre HTML5, box model, position y display, en
+                        el cual me saque 4 respuestas bien y una mal.
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/Image.jpeg" alt="" width="300" height="300">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>RESUMEN</h2>
+            <div class="resumen">
+                <p> Fabiola Ortiz <br>
+                    matricula:241922
+                </p>
+            </div>
+        </footer>
+    </main>
+    <div class="inicio-btn">
+        <a href="#top">Ir al inicio</a>
+    </div>
+</body>
+
+</html>
